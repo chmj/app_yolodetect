@@ -46,7 +46,7 @@ This pipeline approach is highly efficient, as the heavy-duty landmark extractio
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/chmj/app_yolodetect.git](https://github.com/chmj/app_yolodetect.git)
+    git clone https://github.com/chmj/app_yolodetect.git
     cd app_yolodetect
     ```
 
@@ -79,7 +79,7 @@ You can run either the local desktop version or the Streamlit web app.
 This will open a standard OpenCV window on your desktop to display the webcam feed.
 
 ```bash
-python3 gesture_app_cleaned.py
+python3 yolodetect.py
 ```
 
 Press the `ESC` key to close the application window.
@@ -100,7 +100,7 @@ Your browser will open a new tab. Click the **"START"** button and grant webcam 
 
 The included Keras model is a placeholder and is not trained. To recognize your own gestures:
 
-1.  **Collect Landmark Data**: Modify either `gesture_app_cleaned.py` or `app_streamlit.py` to save the flattened landmark vectors (`landmarks` variable in the code) to a CSV file. Create separate files or use labels for each gesture you want to train.
+1.  **Collect Landmark Data**: Modify either `yolodetect.py` or `app_streamlit.py` to save the flattened landmark vectors (`landmarks` variable in the code) to a CSV file. Create separate files or use labels for each gesture you want to train.
 
 2.  **Train the Keras Model**: Create a separate Python script to:
     - Load the data from your CSV files.
@@ -108,7 +108,7 @@ The included Keras model is a placeholder and is not trained. To recognize your 
     - Train the model on your landmark data.
     - Save the trained model's weights: `model.save_weights('my_gesture_model.h5')`.
 
-3.  **Load Your Trained Model**: In `gesture_app_cleaned.py` or `app_streamlit.py`, uncomment the following line and update the path to your saved weights file:
+3.  **Load Your Trained Model**: In `yolodetect.py` or `app_streamlit.py`, uncomment the following line and update the path to your saved weights file:
     ```python
     # gesture_model.load_weights('my_gesture_model.h5')
     ```
