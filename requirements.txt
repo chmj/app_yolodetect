@@ -1,9 +1,13 @@
-# requirements.txt
-
-opencv-python==4.9.0.80
-ultralytics==8.2.0
-tensorflow==2.16.1
-mediapipe==0.10.14
-numpy==1.26.4
-torch>=2.0.0
+# For computer vision
+opencv-python
+ultralytics
+tensorflow
+mediapipe
+torch
 torchvision
+
+# For web app (install all for flexibility)
+streamlit
+streamlit-webrtc
+aiortc   # Dependency for streamlit-webrtc
+Flask
