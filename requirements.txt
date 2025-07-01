@@ -10,3 +10,6 @@ torchvision
 streamlit
 streamlit-webrtc
 aiortc
+
+# helper
+wachdog
