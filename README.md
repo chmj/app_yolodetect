@@ -1,6 +1,5 @@
 # Real-Time Gesture Recognition App
 
-![Gesture Recognition Demo](https://placehold.co/600x400/2d3748/ffffff?text=Add+a+GIF+of+the+app+in+action+here)
 
 A real-time computer vision application that detects and classifies hand gestures from a webcam feed using a powerful combination of deep learning and machine learning models.
 
