@@ -73,7 +73,7 @@ This pipeline approach is highly efficient, as the heavy-duty landmark extractio
 To run the application, simply execute the main Python script from your terminal:
 
 ```bash
-python3 gesture_app_cleaned.py
+python3 yolodetect.py
 ```
 
 A window will open showing your webcam feed. When you show your hand, a blue box should identify the region, and the detected gesture will be displayed on the screen.
@@ -92,7 +92,7 @@ The included Keras model is a placeholder and is not trained. To recognize your 
     - Train the model on your landmark data.
     - Save the trained model's weights: `model.save_weights('my_gesture_model.h5')`.
 
-3.  **Load Your Trained Model**: In `gesture_app_cleaned.py`, uncomment the following line and update the path to your saved weights file:
+3.  **Load Your Trained Model**: In `yolodetect.py`, uncomment the following line and update the path to your saved weights file:
     ```python
     # gesture_model.load_weights('my_gesture_model.h5')
     ```
