@@ -15,7 +15,7 @@ This project uses:
 
 The application follows a multi-stage pipeline to achieve efficient and accurate gesture recognition:
 
-1.  **Video Input**: The app can use a local OpenCV window (`gesture_app_cleaned.py`) or a browser's webcam feed via Streamlit-WebRTC (`app_streamlit.py`).
+1.  **Video Input**: The app can use a local OpenCV window (`yolodetect.py`) or a browser's webcam feed via Streamlit-WebRTC (`app_streamlit.py`).
 2.  **Region of Interest (ROI) Detection**: Instead of scanning the entire frame, the app first uses a pre-trained YOLOv8 model to detect a `person`. This quickly and reliably identifies the main area where a hand is likely to be.
 3.  **Landmark Extraction**: The detected ROI is cropped and passed to the MediaPipe Hands model to extract 21 detailed 3D landmarks for the hand.
 4.  **Gesture Classification**: The 3D coordinates of the landmarks are flattened and fed into a custom Keras neural network, which classifies the gesture into predefined categories.
