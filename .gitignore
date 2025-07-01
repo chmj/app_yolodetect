@@ -1,0 +1,10 @@
+# .gitignore
+.venv/
+__pycache__/
+*.pyc
+static/*
+!.gitkeep # Keep the uploads folder structure, but ignore contents
+.env     # (!) Security keys are not in git (!)
+log/
+logs/*
+*.pt
