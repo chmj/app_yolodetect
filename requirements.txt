@@ -1,12 +1,12 @@
 # For computer vision
-opencv-python==4.8.1.78
-ultralytics==8.0.221
-tensorflow==2.15.0
-mediapipe==0.10.9
-torch==2.1.2
-torchvision==0.16.2
+opencv-python
+ultralytics
+tensorflow
+mediapipe
+torch
+torchvision
 
 # For web app
-streamlit==1.36.0
-streamlit-webrtc==0.47.0
-aiortc==1.6.0
+streamlit
+streamlit-webrtc
+aiortc
